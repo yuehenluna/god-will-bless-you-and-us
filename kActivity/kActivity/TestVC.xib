@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestVC">
+            <connections>
+                <outlet property="label1" destination="ts8-0y-4lH" id="TPx-y8-8Le"/>
+                <outlet property="label2" destination="etq-jj-2gl" id="Ta7-Ex-cYJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风林火山，红红火火" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ts8-0y-4lH">
+                    <rect key="frame" x="0.0" y="120" width="320" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="I7z-ZP-9pO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="God will bless you and us. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etq-jj-2gl">
+                    <rect key="frame" x="0.0" y="190" width="320" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="E5T-iy-Mea"/>
+                        <constraint firstAttribute="height" constant="50" id="uFV-ao-zdK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="etq-jj-2gl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Rh-Ik-09C"/>
+                <constraint firstItem="etq-jj-2gl" firstAttribute="top" secondItem="ts8-0y-4lH" secondAttribute="bottom" constant="20" id="1tk-aj-1H8"/>
+                <constraint firstAttribute="trailing" secondItem="etq-jj-2gl" secondAttribute="trailing" id="LhH-tz-Jaw"/>
+                <constraint firstAttribute="trailing" secondItem="ts8-0y-4lH" secondAttribute="trailing" id="lYL-xc-57W"/>
+                <constraint firstItem="ts8-0y-4lH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nZw-zO-ZaP"/>
+                <constraint firstItem="ts8-0y-4lH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="p12-Uv-ZYI"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="302" y="353"/>
+        </view>
+    </objects>
+</document>
