@@ -8,7 +8,6 @@
 
 #import "CustomTableVC.h"
 
-#import "kGeneralViews.h"
 
 @interface CustomTableVC ()
 
@@ -54,12 +53,6 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100;
-}
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"hahaha" message:@"响应了点击事件..." preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:nil];
-    [alert addAction:action];
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 /*
 // Override to support conditional editing of the table view.
