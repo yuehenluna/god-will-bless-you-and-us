@@ -66,6 +66,7 @@
 		58CAB0BB1DC48E0F00B038B6 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 58CAB0AC1DC48E0F00B038B6 /* IQKeyboardManager.bundle */; };
 		58D731DA1DBD99A200636062 /* KeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D731D91DBD99A200636062 /* KeyChainHelper.m */; };
 		58E02D781DAB94C400767035 /* CustomTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E02D771DAB94C400767035 /* CustomTableVC.m */; };
+		58E50B391DD0730800DCC9F0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E50B381DD0730800DCC9F0 /* libsqlite3.0.tbd */; };
 		58E5F04E1D756E7100DBFF48 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E5F04C1D756E7100DBFF48 /* TestVC.m */; };
 		58E5F04F1D756E7100DBFF48 /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E5F04D1D756E7100DBFF48 /* TestVC.xib */; };
 		58E5F0531D7570F100DBFF48 /* STXINGKA.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58E5F0521D7570F100DBFF48 /* STXINGKA.ttf */; };
@@ -233,6 +234,7 @@
 		58D731D91DBD99A200636062 /* KeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainHelper.m; sourceTree = "<group>"; };
 		58E02D761DAB94C400767035 /* CustomTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableVC.h; sourceTree = "<group>"; };
 		58E02D771DAB94C400767035 /* CustomTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableVC.m; sourceTree = "<group>"; };
+		58E50B381DD0730800DCC9F0 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		58E5F04B1D756E7100DBFF48 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
 		58E5F04C1D756E7100DBFF48 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 		58E5F04D1D756E7100DBFF48 /* TestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestVC.xib; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E50B391DD0730800DCC9F0 /* libsqlite3.0.tbd in Frameworks */,
 				583EE2A21DBFAC82009D56ED /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				58A14BCB1D65F3CC007BB8FE /* kActivity */,
+				58E50B371DD072E700DCC9F0 /* Frameworks */,
 				58A14BE51D65F3CC007BB8FE /* kActivityTests */,
 				58A14BF01D65F3CC007BB8FE /* kActivityUITests */,
 				58A14BCA1D65F3CC007BB8FE /* Products */,
@@ -634,6 +638,15 @@
 				58CAB0AC1DC48E0F00B038B6 /* IQKeyboardManager.bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		58E50B371DD072E700DCC9F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58E50B381DD0730800DCC9F0 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			path = kActivity/Frameworks;
 			sourceTree = "<group>";
 		};
 		58EF3EB61DBF742300274A39 /* Category */ = {

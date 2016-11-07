@@ -35,6 +35,11 @@
     NSPredicate *allSpace = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regx];
     return [allSpace evaluateWithObject:self];
 }
+- (BOOL)validEmail {
+    NSString *regex = @"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    BOOL rect = [self validateByRegex:regex];
+    return rect;
+}
 - (BOOL)checkPhoneNumInput {
     if(self.length <= 0){
         return NO;
@@ -50,6 +55,11 @@
 - (NSString *)stringByTrim {
     NSCharacterSet *set = [NSCharacterSet whitespaceCharacterSet];
     return [self stringByTrimmingCharactersInSet:set];
+}
+- (BOOL)validateByRegex:(NSString *)regexStr {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regexStr];
+    BOOL rect = [predicate evaluateWithObject:self];
+    return rect;
 }
 - (NSString *)validMobile {
     if(self.length < 11){

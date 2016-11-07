@@ -31,7 +31,7 @@
 
 @end
 
-@interface NSMutableArray (Extend)
+@interface NSMutableDictionary (Extend)
 
 - (id)popObjectForKey:(id)aKey;
 - (NSDictionary *)popEntriesForKeys:(NSArray *)keys;

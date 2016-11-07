@@ -14,10 +14,12 @@
  *  --z basic frame
  */
 - (CGFloat)x;
+- (void)setX:(CGFloat)x;
 - (CGFloat)y;
+- (void)setY:(CGFloat)y;
 - (CGFloat)width;
-- (CGFloat)height;
 - (void)setWidth:(CGFloat)width;
+- (CGFloat)height;
 - (void)setHeight:(CGFloat)height;
 - (CGSize)size;
 - (void)setSize:(CGSize)size;
@@ -25,7 +27,9 @@
 - (void)setCenterX:(CGFloat)centerX;
 - (CGFloat)centerY;
 - (void)setCenterY:(CGFloat)centerY;
+
 - (nullable UIViewController *)superVC;
+
 /**
  *  --z load view
  */

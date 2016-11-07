@@ -14,10 +14,12 @@
 /**
  *  --z 字符串判断
  */
+- (BOOL)validEmail;
 - (BOOL)allSpaceInString;
 - (BOOL)checkPhoneNumInput;
 - (NSString *)validMobile;
 - (NSString *)stringByTrim;
+- (BOOL)validateByRegex:(NSString *)regexStr;
 /**
  *  --z 编码，加密
  */
