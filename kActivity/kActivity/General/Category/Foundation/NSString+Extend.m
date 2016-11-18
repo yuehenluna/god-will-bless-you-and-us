@@ -134,24 +134,16 @@
     [formate setDateFormat:formatString];
     return [formate stringFromDate:date];
 }
-- (CGFloat)heightWithMaxWidth:(CGFloat)widthValue andFont:(UIFont *)font {
-    return [self stringSizeForMAXWidth:widthValue andFont:font].height;
+- (CGFloat)autoHeight:(UIFont *)font width:(CGFloat)width {
+    NSDictionary *attributes = @{NSFontAttributeName:font};
+    NSInteger options = NSStringDrawingUsesFontLeading | NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin;
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:options attributes:attributes context:NULL];
+    return rect.size.height;
 }
-- (CGSize)stringSizeForMAXWidth:(CGFloat)widthValue andFont:(UIFont *)font {
-    CGFloat result = 0;
-    CGSize size;
-    if (self.length>0) {
-        CGRect frame = [self boundingRectWithSize:CGSizeMake(widthValue, CGFLOAT_MAX)
-                                          options:NSStringDrawingUsesLineFragmentOrigin
-                                       attributes:@{NSFontAttributeName:font}
-                                          context:nil];
-        size = CGSizeMake(frame.size.width, frame.size.height+1);
-        result = MAX(size.height, result);
-    }
-    return CGSizeMake(size.width, result);
+- (CGFloat)autoWidth:(UIFont *)font height:(CGFloat)height {
+    NSDictionary *attributes = @{NSFontAttributeName:font};
+    NSInteger options = NSStringDrawingUsesFontLeading | NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin;
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(MAXFLOAT, height) options:options attributes:attributes context:NULL];
+    return rect.size.width;
 }
-- (CGFloat)realHeightForStringWithWidth:(CGFloat)width font:(UIFont *)font {
-    return [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:font} context:nil].size.height+1;
-}
-
 @end

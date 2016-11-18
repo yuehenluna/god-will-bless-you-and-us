@@ -11,6 +11,7 @@
 #import "TestVC.h"
 
 #import "UIButton+Extend.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -26,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 70, 60, 30)];
     btn.backgroundColor = [UIColor greenColor];
     [btn setTitle:@"哈哈哈" forState:UIControlStateNormal];
@@ -90,7 +92,6 @@
     self.typeNum = 5;
     [ErrorView showError:@"店小二约会去了，暂不提供服务" withShowDuration:0.3];
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

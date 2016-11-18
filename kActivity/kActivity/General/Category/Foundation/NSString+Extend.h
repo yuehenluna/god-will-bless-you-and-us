@@ -43,8 +43,7 @@
 /**
  *  --z 其他
  */
-- (CGFloat)heightWithMaxWidth:(CGFloat)widthValue andFont:(UIFont *)font;
-- (CGSize)stringSizeForMAXWidth:(CGFloat)widthValue andFont:(UIFont *)font;
-- (CGFloat)realHeightForStringWithWidth:(CGFloat)width font:(UIFont *)font; // 高度计算补偿1
+- (CGFloat)autoHeight:(UIFont *)font width:(CGFloat)width;
+- (CGFloat)autoWidth:(UIFont *)font height:(CGFloat)height;
 
 @end

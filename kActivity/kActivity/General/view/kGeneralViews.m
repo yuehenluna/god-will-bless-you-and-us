@@ -170,7 +170,7 @@ static ErrorView *_g_ErrorView = nil;
         _g_ErrorView.strLabel.text = @"Error";
     }
     [[AppDelegate getMainWindow] addSubview:_g_ErrorView];
-    CGFloat height = [_g_ErrorView.strLabel.text heightWithMaxWidth:_g_ErrorView.strLabel.width andFont:_g_ErrorView.strLabel.font]+2*margin;
+    CGFloat height = [_g_ErrorView.strLabel.text autoHeight:_g_ErrorView.strLabel.font width:_g_ErrorView.strLabel.width];
     CGFloat width = _g_ErrorView.bgView.width;
     _g_ErrorView.bgView.size = CGSizeMake(width, height);
     _g_ErrorView.bgView.center = _g_ErrorView.center;
